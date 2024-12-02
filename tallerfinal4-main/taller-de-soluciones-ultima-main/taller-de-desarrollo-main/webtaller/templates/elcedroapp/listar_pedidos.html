@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Lista de Pedidos</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Lista de Pedidos</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre Cliente</th>
+                <th>Direccion</th>
+                <th>Telefono</th>     
+                <th>Cantidad Bidones</th>  
+                <th>Fecha</th>     
+            </tr>
+        </thead>
+        <tbody>
+            {% for pedido in pedidos %}
+            <tr>
+                <td>{{ pedido.0 }}</td>
+                <td>{{ pedido.1 }}</td>
+                <td>{{ pedido.2 }}</td>
+                <td>{{ pedido.3 }}</td>
+                <td>{{ pedido.4 }}</td>
+                <td>{{ pedido.5 }}</td>
+                <td>
+                    <a href="{% url 'actualizar-pedido' pedido.0 %}">Actualizar</a>
+                    <a href="{% url 'eliminar-pedido' pedido.0 %}" onclick="return confirm('¿Estás seguro de que quieres eliminar este pedido?');">Eliminar</a>
+                </td>
+                
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3" class="text-center">No hay pedidos registrados.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'registrar-pedido' %}" class="btn btn-primary">Registrar Nuevo Pedido</a>
+    <a href="{% url 'index' %}" class="btn btn-danger">Volver</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - El Cedro</title>
+    <link rel="stylesheet" href="{% static 'css/galeria.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<header id="header-index">
+    <h1 id="titulo-header">EL CEDRO</h1>
+    <div id="links-box">
+        <a href="../" class="links-header">Inicio</a>
+        <a href="{%url 'productos'%}" class="links-header">Productos</a>
+        <a href="{%url 'certificados'%}" class="links-header">Certificados</a>
+        <a href="{%url 'galeria'%}" class="links-header">Galería</a>
+        <a href="{%url 'sobrenosotros'%}"  class="links-header">Sobre Nosotros</a>
+        <a href="#" class="links-header">Contáctanos</a>
+
+    </div>
+</header>
+<body>
+    <section class="galeria-section" style="padding-bottom: 150px;">
+        <h1 id="titulo-galeria">Galería <span class="desc-titulo">El Cedro</span></h1>
+        <div class="galeria-container">
+            <!-- Imagen 1 -->
+            <div class="galeria-card">
+                <img src="{% static 'img/purificadora.jpg' %}" alt="Planta de Purificación" class="galeria-imagen">
+                <div class="galeria-info">
+                    <h2 class="galeria-titulo">Planta de Purificación</h2>
+                    <p class="galeria-descripcion">Moderna instalación de purificación de agua en Copiapó, Región de Atacama.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 2 -->
+            <div class="galeria-card">
+                <img src="{% static 'img/equipo.jpg' %}" alt="Equipo de Trabajo" class="galeria-imagen">
+                <div class="galeria-info">
+                    <h2 class="galeria-titulo">Nuestro Equipo</h2>
+                    <p class="galeria-descripcion">Profesionales comprometidos con la calidad y servicio en El Cedro.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 3 -->
+            <div class="galeria-card">
+                <img src="{% static 'img/llenado.jpg' %}" alt="Proceso de Embotellado" class="galeria-imagen">
+                <div class="galeria-info">
+                    <h2 class="galeria-titulo">Proceso de Embotellado</h2>
+                    <p class="galeria-descripcion">Línea de embotellado con los más altos estándares de higiene y calidad.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 4 -->
+            <div class="galeria-card">
+                <img src="{% static 'img/etiqueta.jpg' %}" alt="Control de Calidad" class="galeria-imagen">
+                <div class="galeria-info">
+                    <h2 class="galeria-titulo">Control de Calidad</h2>
+                    <p class="galeria-descripcion">Rigurosas pruebas de calidad para garantizar agua pura.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 5 -->
+            <div class="galeria-card">
+                <img src="{% static 'img/estanque agua purificada.jpg' %}" alt="Fuente de Agua" class="galeria-imagen">
+                <div class="galeria-info">
+                    <h2 class="galeria-titulo">Fuente de Agua</h2>
+                    <p class="galeria-descripcion">Origen de nuestra agua, extraída de fuentes naturales de la Región de Atacama.</p>
+                </div>
+            </div>
+            
+            <!-- Imagen 6 -->
+            <div class="galeria-card">
+                <img src="{% static 'img/furgon.jpg' %}" alt="Distribución" class="galeria-imagen">
+                <div class="galeria-info">
+                    <h2 class="galeria-titulo">Distribución</h2>
+                    <p class="galeria-descripcion">Flota de distribución para llevar agua de calidad a toda la región.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

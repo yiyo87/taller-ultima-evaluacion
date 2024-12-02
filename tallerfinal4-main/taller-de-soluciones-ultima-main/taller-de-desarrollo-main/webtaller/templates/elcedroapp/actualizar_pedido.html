@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Incluir Bootstrap desde la CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/registrarpedido.css' %}">
+    <title>Actualizar Pedido</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="form-pedido">
+            <h2>Actualizar Pedido</h2>
+            <form id="pedido-form" method="post" action="{% url 'actualizar-pedido' pedido.0 %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" value="{{ pedido.1 }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" name="direccion" value="{{ pedido.2 }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="numero">Teléfono</label>
+                    <input type="text" class="form-control" id="numero" name="numero" value="{{ pedido.3 }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha" class="form-label">Fecha Pedido</label>
+                    <input type="date" class="form-control" id="fecha" name="fecha" value="pedido.5" required>
+                </div>
+                <div class="form-group">
+                    <label for="cantidad_bidones">Cantidad de bidones</label>
+                    <input type="text" class="form-control" id="cantidad_bidones" name="cantidad_bidones" value="{{ pedido.4 }}" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Actualizar Pedido</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Incluir Bootstrap JS y dependencias (opcional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

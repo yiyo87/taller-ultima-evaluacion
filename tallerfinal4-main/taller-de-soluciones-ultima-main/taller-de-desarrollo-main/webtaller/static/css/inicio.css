@@ -1,0 +1,175 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 100%;
+}
+
+#titulo-header {
+    font-size: 50px;
+    margin-left: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+}
+
+.links-header {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #606060;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 0px 33px;
+    padding-bottom: 5px;
+    transition: color 0.1s ease, border-bottom 0.3s ease;
+}
+
+.links-header:hover {
+    border-bottom: 5px solid #6dcfd2;
+    color: #6dcfd2;
+
+}
+
+#links-box {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-left: 120px;
+}
+
+section {
+    width: 85%;
+    margin: auto;
+}
+
+.hero-section {
+    position: relative;
+    height: 800px; 
+
+    background-position: center;
+    background-size: cover; 
+    border-radius: 80px;
+    display: flex;
+    color: white;
+    align-items: center; 
+}
+
+.overlay {
+    width: 40%;
+    margin-left: 10px;
+    margin-top: 50px;
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+
+#titulo-sec {
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.1;
+    color: #333333;
+    padding-left: 15px;
+}
+
+#desc-sec {
+    font-size: 25px;
+    color: #333333;
+    border-left: 3px solid #6dcfd2;
+    padding-left: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#eslogan-sec {
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: oblique;
+    color: #333333;
+    border-left: 3px solid #6dcfd2;
+    padding-left: 15px;
+    margin-bottom: 100px;
+}
+
+.btn-sec {
+
+    background-color: #6dcfd2;
+    text-decoration: none;
+    padding: 21px 30px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    border-radius: 15px;
+    font-size: 20px;
+    border: none;
+    margin-top: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#logo-sec {
+    position: absolute;
+    top: 50%;
+    right: 20px; 
+    width: 520px; 
+    transform: translateY(-50%); 
+    margin-right: 150px;
+    margin-top: 55px;
+}
+.btn-sec:hover{
+    text-decoration: underline;
+}
+#btn-2{
+    color: #6dcfd2;
+    background-color: white;
+    border: 3px solid #6dcfd2;
+    margin-left: 50px;
+}
+
+#btn-2:hover{
+    text-decoration: underline;
+}
+#cont-info{
+    background-color: #6dcfd2;
+}
+.detalles-logo{
+    width: 200px;
+    height: auto;
+}
+#cont-info {
+    display: flex;
+    justify-content: space-around; /* Espacia las tarjetas de manera uniforme */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples filas si el espacio es reducido */
+    gap: 20px; /* Espacio entre cada tarjeta */
+    padding-bottom: 20px;
+    background-image: url('../img/fondoweb.png') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.tarjeta-info {
+    text-align: center;
+}
+
+.titulo-tajeta {
+    font-size: 1.5em;
+    color: white;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.texto-tarjetas {
+    font-size: 1em;
+    color: white;
+    text-align: left;
+    padding-left: 15px;
+}
+.info-tarjeta{
+    text-align: left;
+    border-left: 5px solid white;
+}
+.desc-titulo{
+    color: #6dcfd2;
+}

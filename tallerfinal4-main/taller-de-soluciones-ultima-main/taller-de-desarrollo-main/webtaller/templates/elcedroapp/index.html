@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{%static 'css/inicio.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<header id="header-index">
+    <h1 id="titulo-header">EL CEDRO</h1>
+    <div id="links-box">
+        <a href="../" class="links-header">Inicio</a>
+        <a href="{%url 'productos'%}" class="links-header">Productos</a>
+        <a href="{%url 'certificados'%}" class="links-header">Certificados</a>
+        <a href="{%url 'galeria'%}" class="links-header">Galería</a>
+        <a href="{%url 'sobrenosotros'%}"  class="links-header">Sobre Nosotros</a>
+        <a href="#" class="links-header">Contáctanos</a>
+
+    </div>
+</header>
+<body>
+    <section class="hero-section">
+        <div class="overlay">
+            <h1 id="titulo-sec"><span class="desc-titulo">AGUA</span> PURIFICADA CON <span class="desc-titulo">REPARTO</span> A <span class="desc-titulo">DOMICILIO</span></h1>
+            <p id="desc-sec">SOMOS UNA EMPRESA UBICADA EN LA LOCALIDAD DE LOS 
+                LOROS CON DISTRIBUCION EN COPIAPÓ ENTREGANDO AGUA DE CALIDAD 
+                PARA UN ENTORNO SALUDABLE.<p id="eslogan-sec">"HIDRATACIÓN PURA, BIENESTAR SEGURO."</p></p>
+            <a class="btn-sec" href="../registrar-pedido">Comprar Ahora</a>
+            <a class="btn-sec" href="../listar-pedidos" id="btn-2">Lista de pedidos</a>
+            <img src="{%static 'img/logocedro2.png' %}" alt="" id="logo-sec">
+        </div>
+    </section>
+    <div id="cont-info">
+        <div class="tarjeta-info">
+        <img src="{%static 'img/location3.png' %}" alt="" class="detalles-logo">
+        <div class="info-tarjeta">
+            <h1 class="titulo-tajeta">REPARTO A DOMICILIO</h1>
+            <span class="texto-tarjetas">Actualmente solo distribuimos agua en la ciudad de Copiapó y alrededores</span>
+        </div>
+        </div>
+
+        <div class="tarjeta-info">
+        <img src="{%static 'img/certificado2.png' %}" alt="" class="detalles-logo">
+        <div class="info-tarjeta">
+            <h1 class="titulo-tajeta">CERTIFICACIÓN DE SALUD</h1>
+            <span class="texto-tarjetas">Certificación que valida la calidad y pureza de nuestra agua.</span>
+        </div>
+        </div>
+
+        <div class="tarjeta-info">
+        <img src="{%static 'img/chat2.png' %}" alt="" class="detalles-logo">
+        <div class="info-tarjeta">
+            <h1 class="titulo-tajeta">CONTACTO DIRECTO</h1>
+            <span class="texto-tarjetas">Puedes contactar directamente con la empresa en todo momento.</span>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>

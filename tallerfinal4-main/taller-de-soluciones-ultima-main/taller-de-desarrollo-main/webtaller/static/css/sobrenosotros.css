@@ -1,0 +1,107 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo claro para contraste */
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#titulo-header {
+    font-size: 50px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.desc-titulo {
+    color: #6dcfd2;
+}
+
+#links-box {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-left: 120px;
+}
+
+.links-header {
+    color: #606060;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 0px 33px;
+    padding-bottom: 5px;
+    transition: color 0.1s ease, border-bottom 0.3s ease;
+}
+
+.links-header:hover {
+    border-bottom: 5px solid #6dcfd2;
+    color: #6dcfd2;
+}
+
+.links-header.active {
+    border-bottom: 5px solid #6dcfd2;
+    color: #6dcfd2;
+}
+
+.sobrenosotros-section {
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea */
+    justify-content: space-between; /* Espaciado entre elementos */
+    gap: 10px; /* Espaciado entre filas y columnas */
+    padding: 50px;
+    background-color: #ffffff; /* Fondo blanco para sección */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para efecto visual */
+    max-width: 1200px;
+    margin: auto; /* Centrar en la página */
+}
+
+.sobrenosotros-item {
+    flex: 1 1 calc(50% - 20px); /* Ocupa el 50% del ancho menos el gap */
+    max-width: calc(50% - 20px); /* Máximo 50% del contenedor */
+    box-sizing: border-box; /* Asegura que padding y bordes no afecten el ancho total */
+    background-color: #f9f9f9; /* Fondo claro para elementos */
+    border: 1px solid #e0e0e0; /* Borde suave */
+    border-radius: 8px; /* Esquinas redondeadas */
+    padding: 20px;
+}
+
+.sobrenosotros-section h1 {
+    width: 100%; /* Títulos como "Sobre Nosotros" ocupan toda la fila */
+    margin-bottom: 1px;
+    font-size: 45px;
+    color: #6dcfd2;
+    text-align: center; /* Centrar el título */
+}
+
+.sobrenosotros-item h2 {
+    font-size: 24px;
+    color: #6dcfd2;
+    margin-bottom: 10px;
+}
+
+.sobrenosotros-item p {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
+}
+.sobrenosotros-descripcion{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 40px;
+}
+.sobrenosotros-subtitulo{
+    margin: 0px;
+}
+.sobrenosotros-detalle{
+    margin: 0px;
+    margin-bottom: 60px;
+}

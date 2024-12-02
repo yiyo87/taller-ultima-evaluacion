@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/registrarpedido.css' %}">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Registrar Pedido</title>
+</head>
+<header id="header-index">
+    <h1 id="titulo-header">EL CEDRO</h1>
+    <div id="links-box">
+        <a href="../" class="links-header">Inicio</a>
+        <a href="{%url 'productos'%}" class="links-header">Productos</a>
+        <a href="{%url 'certificados'%}" class="links-header">Certificados</a>
+        <a href="{%url 'galeria'%}" class="links-header">Galería</a>
+        <a href="{%url 'sobrenosotros'%}"  class="links-header">Sobre Nosotros</a>
+        <a href="#" class="links-header">Contáctanos</a>
+
+    </div>
+</header>
+<body>
+    
+    <div id="main-container">
+        <div id="card-form">
+            <div id="main-forms">
+                <h2 id="titulo-form"><span class="desc-form">Hacer</span> Pedido</h2>
+                <span id="text-titulo">Para realizar un pedido en nuestra página, rellena el formulario.</span>
+            </div>
+            <div class="card-form">
+                <img class="img-form" src="{% static 'img/deli2.png' %}" alt="">
+                <h1 class="text-card">Reparto totalmente gratis</h1>
+            </div>
+            <div class="card-form">
+                <img class="img-form" src="{% static 'img/calendario2.png' %}" alt="">
+                <h1 class="text-card">6 días a la semana</h1>
+            </div>
+            <div class="card-form">
+                <img class="img-form" src="{% static 'img/reloj2.png' %}" alt="">
+                <h1 class="text-card">08:00 - 18:00</h1>
+            </div>
+        </div>
+
+        <div id="cont-form">
+            <div class="form-pedido">
+                <form id="pedido-form" method="post" action="{% url 'registrar-pedido' %}">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="numero" name="numero" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha" class="form-label">Fecha Pedido</label>
+                        <input type="date" class="form-control" id="fecha" name="fecha" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cantidad_bidones" class="form-label">Cantidad de bidones</label>
+                        <input type="number" class="form-control" id="cantidad_bidones" name="cantidad_bidones" required oninput="calcularTotal()">
+                    </div>
+                    <h3 id="total" style="margin-top: 20px;">Total: $0</h3>
+                    {% if messages %}
+                    <ul>
+                        {% for message in messages %}
+                            <li style="color: red;">{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <button type="submit" class="btn btn-primary" style="background-color: #6dcfd2; border-color: #6dcfd2; font-weight: bold;">Registrar Pedido</button>
+                    <a href="../" style="color: red; margin-left: 35px;">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script>
+    function calcularTotal() {
+        const cantidad = document.getElementById('cantidad_bidones').value;
+        const total = cantidad * 2000;
+        document.getElementById('total').innerText = 'Total: $' + total + ' CLP';
+    }
+</script>
+</html>

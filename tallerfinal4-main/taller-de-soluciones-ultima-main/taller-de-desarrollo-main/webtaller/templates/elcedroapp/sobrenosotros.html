@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - El Cedro</title>
+    <link rel="stylesheet" href="{% static 'css/sobrenosotros.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<header id="header-index">
+    <h1 id="titulo-header">EL CEDRO</h1>
+    <div id="links-box">
+        <a href="../" class="links-header">Inicio</a>
+        <a href="{%url 'productos'%}" class="links-header">Productos</a>
+        <a href="{%url 'certificados'%}" class="links-header">Certificados</a>
+        <a href="{%url 'galeria'%}" class="links-header">Galería</a>
+        <a href="{%url 'sobrenosotros'%}"  class="links-header">Sobre Nosotros</a>
+        <a href="#" class="links-header">Contáctanos</a>
+
+    </div>
+</header>
+<body>
+    <section class="sobrenosotros-section">
+        <h1 id="titulo-sobrenosotros">Sobre Nosotros</h1>
+        <p class="sobrenosotros-descripcion">
+            Agua Purificada El Cedro es una empresa localizada en la ciudad de Copiapó, en la Región de Atacama, Chile. Dedicada a la purificación, distribución y venta de agua potable de alta calidad, la compañía se ha posicionado como una de las principales proveedoras del recurso en la región, conocida por su clima árido y la importancia de contar con fuentes confiables de agua para consumo humano.
+        </p>
+        <h2 class="sobrenosotros-subtitulo">Misión</h2>
+        <p class="sobrenosotros-detalle">
+            La misión de Agua Purificada El Cedro es ofrecer agua purificada de máxima calidad, garantizando la seguridad y satisfacción de sus clientes, mientras contribuye al cuidado del medio ambiente y promueve el uso consciente del recurso hídrico.
+        </p>
+        <h2 class="sobrenosotros-subtitulo">Visión</h2>
+        <p class="sobrenosotros-detalle">
+            La empresa aspira a consolidarse como líder regional en la industria del agua purificada, con un fuerte compromiso con la innovación tecnológica, el desarrollo sostenible y el bienestar de la comunidad de Atacama.
+        </p>
+        <h2 class="sobrenosotros-subtitulo">Certificaciones</h2>
+        <p class="sobrenosotros-detalle">
+            El Cedro cuenta con certificaciones de calidad y sanidad otorgadas por autoridades locales y nacionales, asegurando que los procesos de purificación cumplen con los más altos estándares de la industria.
+        </p>
+        <h2 class="sobrenosotros-subtitulo">Productos y Servicios</h2>
+        <ul class="sobrenosotros-lista">
+            <li>Agua en Bidones: Agua purificada en bidones de diferentes capacidades, diseñada para el consumo doméstico y empresarial.</li>
+            <li>Estaciones de Recarga: Puntos de recarga de agua distribuidos estratégicamente en Copiapó, ofreciendo una alternativa ecológica y económica.</li>
+            <li>Servicio de Distribución: Reparto a domicilio para hogares, empresas e instituciones, garantizando comodidad y puntualidad.</li>
+        </ul>
+        <h2 class="sobrenosotros-subtitulo">Compromiso Ambiental</h2>
+        <p class="sobrenosotros-detalle">
+            La empresa busca minimizar su huella ecológica mediante la implementación de tecnologías modernas de purificación y el uso de envases reutilizables. Además, fomenta campañas de concientización sobre el ahorro y cuidado del agua.
+        </p>
+        <h2 class="sobrenosotros-subtitulo">Ubicación</h2>
+        <p class="sobrenosotros-detalle">
+            Agua Purificada El Cedro tiene su base de operaciones en Copiapó, una ciudad emblemática por su desarrollo en minería y agricultura, donde el acceso a agua purificada de calidad es fundamental para la vida cotidiana y las actividades productivas.
+        </p>
+    </section>
+</body>
+</html>

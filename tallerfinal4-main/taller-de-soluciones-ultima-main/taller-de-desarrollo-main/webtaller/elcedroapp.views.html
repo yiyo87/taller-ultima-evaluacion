@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module elcedroapp.views</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="elcedroapp.html" class="white">elcedroapp</a>.views</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cadministrator%5Cdownloads%5Ctaller-de-soluciones-ultima-main%5Ctaller-de-desarrollo-main%5Cwebtaller%5Celcedroapp%5Cviews.py">c:\users\administrator\downloads\taller-de-soluciones-ultima-main\taller-de-desarrollo-main\webtaller\elcedroapp\views.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="django.contrib.messages.html">django.contrib.messages</a><br>
+</td><td class="multicolumn"><a href="re.html">re</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-actualizar_pedido"><strong>actualizar_pedido</strong></a>(request, pedido_id)</dt><dd><span class="code">Actualiza&nbsp;un&nbsp;pedido&nbsp;existente&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.<br>
+&nbsp;<br>
+Muestra&nbsp;los&nbsp;datos&nbsp;actuales&nbsp;en&nbsp;un&nbsp;formulario,&nbsp;y&nbsp;guarda&nbsp;los&nbsp;cambios&nbsp;realizados&nbsp;por&nbsp;el&nbsp;usuario.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;Objeto&nbsp;de&nbsp;solicitud&nbsp;HTTP.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pedido_id&nbsp;(int):&nbsp;ID&nbsp;del&nbsp;pedido&nbsp;a&nbsp;actualizar.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;Renderiza&nbsp;el&nbsp;formulario&nbsp;con&nbsp;los&nbsp;datos&nbsp;existentes&nbsp;o&nbsp;redirige&nbsp;a&nbsp;la&nbsp;lista&nbsp;de&nbsp;pedidos&nbsp;tras&nbsp;actualizar.</span></dd></dl>
+ <dl><dt><a name="-certificados"><strong>certificados</strong></a>(request)</dt><dd><span class="code">Renderiza&nbsp;la&nbsp;página&nbsp;de&nbsp;certificados.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;Objeto&nbsp;de&nbsp;solicitud&nbsp;HTTP.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;Respuesta&nbsp;con&nbsp;la&nbsp;plantilla&nbsp;de&nbsp;la&nbsp;página&nbsp;de&nbsp;certificados.</span></dd></dl>
+ <dl><dt><a name="-crear_pedido"><strong>crear_pedido</strong></a>(request)</dt><dd><span class="code">Crea&nbsp;un&nbsp;nuevo&nbsp;pedido&nbsp;a&nbsp;partir&nbsp;de&nbsp;los&nbsp;datos&nbsp;enviados&nbsp;por&nbsp;el&nbsp;usuario.<br>
+&nbsp;<br>
+Valida&nbsp;los&nbsp;datos&nbsp;del&nbsp;formulario&nbsp;y&nbsp;los&nbsp;inserta&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.<br>
+Si&nbsp;hay&nbsp;errores&nbsp;de&nbsp;validación,&nbsp;muestra&nbsp;mensajes&nbsp;al&nbsp;usuario.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;Objeto&nbsp;de&nbsp;solicitud&nbsp;HTTP.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;Renderiza&nbsp;la&nbsp;página&nbsp;del&nbsp;formulario&nbsp;en&nbsp;caso&nbsp;de&nbsp;error&nbsp;o&nbsp;redirige&nbsp;a&nbsp;la&nbsp;lista&nbsp;de&nbsp;pedidos.</span></dd></dl>
+ <dl><dt><a name="-eliminar_pedido"><strong>eliminar_pedido</strong></a>(request, pedido_id)</dt><dd><span class="code">Elimina&nbsp;un&nbsp;pedido&nbsp;de&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;Objeto&nbsp;de&nbsp;solicitud&nbsp;HTTP.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pedido_id&nbsp;(int):&nbsp;ID&nbsp;del&nbsp;pedido&nbsp;a&nbsp;eliminar.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;Redirige&nbsp;a&nbsp;la&nbsp;lista&nbsp;de&nbsp;pedidos&nbsp;tras&nbsp;eliminar&nbsp;el&nbsp;registro.</span></dd></dl>
+ <dl><dt><a name="-galeria"><strong>galeria</strong></a>(request)</dt><dd><span class="code">Renderiza&nbsp;la&nbsp;página&nbsp;de&nbsp;galería.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;Objeto&nbsp;de&nbsp;solicitud&nbsp;HTTP.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;Respuesta&nbsp;con&nbsp;la&nbsp;plantilla&nbsp;de&nbsp;la&nbsp;página&nbsp;de&nbsp;galería.</span></dd></dl>
+ <dl><dt><a name="-index"><strong>index</strong></a>(request)</dt><dd><span class="code">Renderiza&nbsp;la&nbsp;página&nbsp;de&nbsp;inicio.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;Objeto&nbsp;de&nbsp;solicitud&nbsp;HTTP.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;Respuesta&nbsp;con&nbsp;la&nbsp;plantilla&nbsp;de&nbsp;la&nbsp;página&nbsp;de&nbsp;inicio.</span></dd></dl>
+ <dl><dt><a name="-listar_pedidos"><strong>listar_pedidos</strong></a>(request)</dt><dd><span class="code">Recupera&nbsp;y&nbsp;muestra&nbsp;todos&nbsp;los&nbsp;pedidos&nbsp;almacenados&nbsp;en&nbsp;la&nbsp;base&nbsp;de&nbsp;datos.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;Objeto&nbsp;de&nbsp;solicitud&nbsp;HTTP.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;Respuesta&nbsp;con&nbsp;la&nbsp;plantilla&nbsp;de&nbsp;la&nbsp;lista&nbsp;de&nbsp;pedidos&nbsp;y&nbsp;los&nbsp;datos&nbsp;correspondientes.</span></dd></dl>
+ <dl><dt><a name="-productos"><strong>productos</strong></a>(request)</dt><dd><span class="code">Renderiza&nbsp;la&nbsp;página&nbsp;de&nbsp;productos.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;Objeto&nbsp;de&nbsp;solicitud&nbsp;HTTP.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;Respuesta&nbsp;con&nbsp;la&nbsp;plantilla&nbsp;de&nbsp;la&nbsp;página&nbsp;de&nbsp;productos.</span></dd></dl>
+ <dl><dt><a name="-sobreNosotros"><strong>sobreNosotros</strong></a>(request)</dt><dd><span class="code">Renderiza&nbsp;la&nbsp;página&nbsp;de&nbsp;información&nbsp;"Sobre&nbsp;Nosotros".<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;(HttpRequest):&nbsp;Objeto&nbsp;de&nbsp;solicitud&nbsp;HTTP.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HttpResponse:&nbsp;Respuesta&nbsp;con&nbsp;la&nbsp;plantilla&nbsp;de&nbsp;la&nbsp;página&nbsp;"Sobre&nbsp;Nosotros".</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>connection</strong> = &lt;django.utils.connection.ConnectionProxy object&gt;</td></tr></table>
+</body></html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - El Cedro</title>
+    <link rel="stylesheet" href="{% static 'css/productos.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<header id="header-index">
+    <h1 id="titulo-header">EL CEDRO</h1>
+    <div id="links-box">
+        <a href="../" class="links-header">Inicio</a>
+        <a href="{%url 'productos'%}" class="links-header">Productos</a>
+        <a href="{%url 'certificados'%}" class="links-header">Certificados</a>
+        <a href="{%url 'galeria'%}" class="links-header">Galería</a>
+        <a href="{%url 'sobrenosotros'%}"  class="links-header">Sobre Nosotros</a>
+        <a href="#" class="links-header">Contáctanos</a>
+
+    </div>
+</header>
+<body>
+    <section class="productos-section">
+        <h1 id="titulo-productos">Nuestros <span class="desc-titulo">Productos</span></h1>
+        <div class="productos-container">
+            <!-- Producto 1 -->
+            <div class="producto-card">
+                <img src="{% static 'img/iglesia 2.jpg' %}" alt="Botellón 20L" class="producto-imagen">
+                <h2 class="producto-titulo">Botellón 20L</h2>
+                <p class="producto-descripcion">Agua purificada de alta calidad en formato de 20 litros. Ideal para familias y oficinas.</p>
+                <span class="producto-precio">$2,000 CLP</span>
+                <a href="../registrar-pedido" class="btn-producto">Comprar</a>
+            </div>
+            <!-- Producto 2 -->
+            <div class="producto-card">
+                <img src="{% static 'img/iglesia.jpg' %}" alt="Botellón 10L" class="producto-imagen">
+                <h2 class="producto-titulo">Botellón 10L</h2>
+                <p class="producto-descripcion">Formato compacto de 10 litros, ideal para uso personal o espacios pequeños.</p>
+                <br>
+                <span class="producto-precio">Proximamente</span>
+            </div>
+            <!-- Producto 3 -->
+            <div class="producto-card">
+                <img src="{% static 'img/500ml.jpg' %}" alt="Botellín 500ml" class="producto-imagen">
+                <h2 class="producto-titulo">Botellín 500ml</h2>
+                <p class="producto-descripcion">Botellín de agua purificada, perfecto para llevar contigo a todas partes.</p>
+                <br>
+                <span class="producto-precio">Proximamente</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

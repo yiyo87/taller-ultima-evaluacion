@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados - El Cedro</title>
+    <link rel="stylesheet" href="{% static 'css/productos.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<header id="header-index">
+    <h1 id="titulo-header">EL CEDRO</h1>
+    <div id="links-box">
+        <a href="../" class="links-header">Inicio</a>
+        <a href="{%url 'productos'%}" class="links-header">Productos</a>
+        <a href="{%url 'certificados'%}" class="links-header">Certificados</a>
+        <a href="{%url 'galeria'%}" class="links-header">Galería</a>
+        <a href="{%url 'sobrenosotros'%}"  class="links-header">Sobre Nosotros</a>
+        <a href="#" class="links-header">Contáctanos</a>
+
+    </div>
+</header>
+<body>
+    <section class="productos-section">
+        <h1 id="titulo-productos">Certificados de <span class="desc-titulo">Calidad</span></h1>
+        <p style="text-align: left; font-size: 20px; color: #606060; margin-bottom: 70px;">
+            Nuestra empresa está respaldada por las certificaciones de calidad y salud emitidas por las autoridades competentes de la Región de Atacama. Aquí puedes ver nuestro certificado.
+        </p>
+        <div class="productos-container">
+            <!-- Certificado 1 -->
+            <div class="producto-card">
+                <img src="{% static 'img/salud.png' %}" alt="Certificado de Calidad" class="producto-imagen">
+                <h2 class="producto-titulo">Certificado de Calidad</h2>
+                <p class="producto-descripcion" style="margin-bottom: 50px;">Este certificado garantiza que nuestra agua cumple con los más altos estándares de calidad.</p>
+                <a href="{% static 'docs/certificado.pdf' %}" class="btn-producto" target="_blank">Ver Certificado</a>
+            </div>
+    </section>
+</body>
+</html>
